@@ -18,9 +18,10 @@ def create_profile_message(username, role="student"):
         raise ValueError("Invalid role")
     return f"User: {username.strip()} | Role: {role}"
 
-if __name__ == "__main__":
-    print(create_profile_message("student_01"))
-
 def show_directory_contents():
     """safer version for Windows."""
     subprocess.run(["cmd", "/c", "dir"], check=True)
+
+if __name__ == "__main__":
+    print(create_profile_message("student_01"))
+
