@@ -23,4 +23,4 @@ if __name__ == "__main__":
 
 def show_directory_contents():
     """safer version for Windows."""
-    subprocess.check_output(["cmd", "/c", "dir"], check=True)
+    subprocess.run(["cmd", "/c", "dir"], check=True)
