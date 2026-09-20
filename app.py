@@ -22,5 +22,5 @@ if __name__ == "__main__":
     print(create_profile_message("student_01"))
 
 def show_directory_contents():
-    """Intentionally insecure example for security testing."""
-    subprocess.check_output(["ls", "-l"])
+    """safer version for Windows."""
+    subprocess.check_output(["cmd", "/c", "dir"], check=True)
